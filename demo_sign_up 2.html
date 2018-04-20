@@ -1,0 +1,87 @@
+<html>
+	<head>
+		
+		<title>Game Ban</title>
+
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/signup.js"></script>
+
+		<style type="text/css">
+			#message{
+				color :red
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/styleSignup.css">
+	</head>
+
+	<body>
+	<div class="bodycontext" id="bodycontext">
+		<div class="header" id="header">
+			Welcome to GAME BAN
+		</div>
+		<div class="signupBox" id="signupBox">
+			<table class="inputContext">
+				            <tbody> 
+
+				            	<caption class="titleOFtable">Sign up</caption>
+
+				                <tr class="tr_input">  
+				                    <td>UserName:</td>  
+				                    <td>
+				                    	<input class="text" type="text" name="username" id="username" value="Enter your username" 
+				                    	onblur="judgement1(this)"
+				                    	onfocus="clearusername(this)">
+				                    </td>
+				                </tr>
+
+				                <tr class="tr_input">  
+				                    <td>PassWord:</td>
+				                    <td>
+				                    	<input class="text" type="text" name="password" id="password" value="Enter your password"  
+				                    	onblur="judgement2(this)"
+										onfocus="clearpassword(this)">
+				                    </td>  
+				                </tr>
+
+				                <tr class="tr_input_long">
+				                    <td>PassWord Again:</td>
+				                    <td>
+				                    	<input class="text" type="text" name="passwordAgain" id="passwordAgain" value="Enter your password again" 
+				                    	onblur="judgement3(this)"
+										onfocus="clearpasswordagain(this)">
+				                    </td>		         
+				                </tr>
+
+				                <tr class="tr_input">
+				                	<td>Age:</td>
+				                	<td>
+				                		<input class="text" type="text" name="age" id="age" value="Enter your age" 
+				                		onblur="judgement4(this)"
+				                		onfocus="clearage(this)">
+				                	</td>
+				                </tr>
+
+				                <tr class="tr_radio">
+				                	<td>Sex:</td>
+				                	<td>
+				                		<input type="radio" name="sex" id="sex" id="choice1" value="male" checked>
+				                		<label for="choice1" > Male</label>
+				                		<input type="radio" name="sex" id="sex" id="choice2" value="female">
+				                		<label for="choice2"> Female</label>
+				                	</td>
+				                </tr>				             				
+				            </tbody>  
+			</table>
+			<div class="button">
+				<button tpye="button" id="login_button1" onclick="window.location.href='http://localhost/index.html'">Go to sign in!</button>   
+			</div>
+			<div class="button">   
+				<button type="button" id="login_button">Submit</button>  
+			</div>
+			<div id="message"></div>
+			</td>  
+		</div>	 
+	</div>
+	</body>
+
+</html>

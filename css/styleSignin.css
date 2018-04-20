@@ -1,0 +1,96 @@
+.bodycontext{
+	background: url(../images/header.png) top repeat-x;
+	min-width: 1000px;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+
+.header{
+	color: white;
+	font-family: "Impact";
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	margin: 80px auto 0;
+	width: 1000px;
+	height: 60px;
+}
+
+.signinBox{
+	background:url(../images/loginBg.png) repeat-x top center;
+	margin:100px auto 0;
+	width:423px;
+	height:366px;
+	border:1px solid #ededed;
+	text-align: center
+}
+
+.signin{
+	width: 350px;
+	height: 360px;
+	border: 0;
+	margin: auto;
+}
+
+.titleOFtable{
+	width: 300px;
+	height: 50px;
+	margin: 30px;
+	text-align: center;
+	font-size: 40px;
+	font-family: "Impact";
+	color: #0061AA;
+}
+
+
+
+.tr_input td:nth-child(1){
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	font-family: "Arial";
+	color: #0061AA;
+}
+
+.tr_input td:nth-child(2){
+	width: 200px;
+	height: 50px;
+	margin-right: 5px;
+	text-align: center;
+}
+
+.button{ 
+	margin: 10px;
+	width: 180px;
+	height: 20px;
+	float: left;
+}
+
+input{
+	width: 230px;
+	height: 30px;
+	margin-right:20px; 
+}
+
+button {
+ 	display: block;
+	width: 110px;
+ 	height: 30px;
+ 	line-height: 10px;
+ 	margin: 0 auto;
+ 	color: #0061AA;
+ 	font-weight: bolder;
+ 	border: 2px solid #0061AA;
+ 	box-sizing: border-box;
+ 	transition: all 1s;
+ 	padding-left: 10px;
+ 	position: relative;
+}
+
+
+
+
+
+
+

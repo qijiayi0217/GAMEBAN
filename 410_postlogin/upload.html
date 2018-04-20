@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>GameBan: Post a New Game</title>
+<link rel="stylesheet" href="css/styles.css">
+<script language="javascript" type="text/javascript">
+            function qjy(){
+            
+            var allcookie=document.cookie;
+            
+            var check =allcookie.indexOf('userName');
+            
+            if (check==-1){
+                window.location.href="http://localhost";
+            }
+        }
+        function open1234(name,name2,path){
+ var name = escape(name);  
+ var name2= escape(name2);
+    var expires = new Date(0);  
+    path = path == "" ? "" : ";path=" + path;  
+    document.cookie = name + "="+ ";expires=" + expires.toUTCString() + path;
+    document.cookie = name2 + "="+ ";expires=" + expires.toUTCString() + path;
+    document.cookie = "gameName" + "="+ ";expires=" + expires.toUTCString() + path;    
+    window.location.href="http://localhost";
+}
+    qjy();
+        </script>
+</head>
+<body>
+    <form><input class="logout" value="log out!" type=button onclick="open1234('userName','userPass','/')"></form>
+<div class="container">
+	<header class="banner">
+        <h1><a href="index.php">GameBan</a></h1>
+        </header>
+        <nav class="menu">
+       	<ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a class="current" href="upload.html">Post a New Game</a></li>
+        <li><a href="account.php">My Account</a></li>
+                                </ul>
+                        </nav>
+
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+	<table border=0 cellspacing=0  cellpadding=0 style="height:50%; width:50%" align="center">
+		<tbody>
+		<tr align = "center" valign="middle">
+			<td width="" height="">Name of the game:</td>
+			<td width="" height="">
+				<input type="text" name="gameName">
+			</td>
+		</tr>
+
+		<tr align = "center" valign="middle">
+                        <td width="" height="">Category:</td>
+                        <td width="" height="">
+                                <select name="category" style="width:132px">
+            <option value="FPS">FPS</option>
+            <option value="MOBA">MOBA</option>
+            <option value="Sports">Sports</option>
+            <option value="Others">Others</option>
+        </select>
+                        </td>
+                </tr>
+
+		<tr align = "center" valign="middle">
+                        <td width="" height="">Description:</td>
+                        <td width="" height="">
+                                <input type="text" name="description">
+                        </td>
+                </tr>
+
+		<tr align = "center" valign="middle">
+                        <td width="" height="">Upload an image (jpg only):</td>
+                        <td width="" height="">
+                                <input type="file" name="file" id="file" value="upload an image">
+                        </td>
+                </tr>
+
+		<tr align="center" valign="middle">
+			<td colspan=2 width="20" height="20" align="center">
+				<input type="submit" name="submit" value="submit">
+			</td>
+		</tr>
+		</tbody>
+	</table>  
+</form>
+</body>
+</html>

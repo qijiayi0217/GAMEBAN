@@ -1,0 +1,98 @@
+<html>
+	<head>
+		
+		<title>Game Ban</title>
+
+
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+		<script type="text/javascript" src="js/login.js"></script>
+
+		<script language="javascript" type="text/javascript">
+
+			function checkCookie(){
+				
+				var allcookie=document.cookie;
+				
+				var check =allcookie.indexOf('userName');
+				
+				if (check!=-1){
+					window.location.href="http://localhost/410_postlogin";
+				}
+		    }
+
+		</script>
+
+		<style type="text/css">
+			#message {
+				color:red
+			}
+			#head {
+				color: #FF4500
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/styleSignin.css" />
+
+	</head>
+
+	<body onload="checkCookie()">
+		<div class="bodycontext" id="bodycontext">
+		<div class="header" id="header">
+			Start your trip in GAME BAN
+		</div>
+		<div class="signinBox" id="signinBox">
+		<!--<center>-->
+			<!-- <form id="loginForm" method="POST" name="login" action="http://localhost/cgi-bin/sign_in_for_html.py">  -->
+			<!-- <table style="height: 100px; width: 100%">  
+				<tr align="center" valign="middle">  
+					<td>   -->
+				        <table class="signin" id="signin">
+				            <tbody>  
+					   		    <!-- <tr valign="middle" align="center">  
+					   	            <td colSpan=2 height=40 valign="middle" align="center">
+					                  	<font face="" size="4px" color="#196ed1" style="padding-left: 20px; vertical-align: middle">Sign in</font>
+				                   </td>  
+				                </tr> -->
+
+				                <tr>  
+				                    <td>   UserName:</td>  
+				                    <td width="180" height="20" align="right">
+					                   	<input type="text" id="username" value="" style="WIDTH: 110px">
+					                </td>     
+					            </tr>
+
+				                <tr>  
+					                <td>   PassWord:</td>  
+					                <td width="180" height="20" align="right">
+					                   	<input type="password" id="password" value="" style="WIDTH: 110px">
+					                </td>      
+					            </tr>  
+					                
+				                <tr class="buttonForSignin">
+				                	<td>
+				                    	<button type="button" id="signup_button" 
+				                    	onclick="window.location.href='http://localhost/demo_sign_up 2.html'">Go to Sign up!</button> 
+				                    </td>
+				                    
+				                    <td>   
+				                    	<button type="button" id="login_button">Sign in</button>  
+				                    </td>
+				                </tr> 
+
+					            <tr>
+					              	<td width="80" height="20" colspan="2" align="center">
+					               		<div id="message"></div>
+					               	</td>
+					            </tr>
+
+				            </tbody>
+				        </table>  
+			        <!-- </td>  
+			    </tr>  
+			</table> -->
+		<!-- </form> -->
+		<!--</center>-->
+		</div>
+	</div>
+	</body>
+</html>

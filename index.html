@@ -1,0 +1,72 @@
+<html>
+	<head>
+		
+		<title>Game Ban</title>
+
+
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+		<script type="text/javascript" src="js/login.js"></script>
+
+		<script language="javascript" type="text/javascript">
+
+			function checkCookie(){
+				
+				var allcookie=document.cookie;
+				
+				var check =allcookie.indexOf('userName');
+				
+				if (check!=-1){
+					window.location.href="http://localhost/410_postlogin";
+				}
+		    }
+		    checkCookie();
+		</script>
+
+		<style type="text/css">
+			#message {
+				color:red
+			}
+			#head {
+				color: #FF4500
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/styleSignin.css" />
+
+	</head>
+
+	<body>
+	<div class="bodycontext" id="bodycontext">
+		<div class="header" id="header">
+			Start your trip in GAME BAN
+		</div>
+		<div class="signinBox" id="signinBox">
+			<table class="signin" id="signin">
+			<tbody>  
+				<caption class="titleOFtable">Sign in </caption>
+				<tr class="tr_input">  
+				    <td>USERNAME:</td>  
+				    <td>
+					<input type="text" id="username" value="">
+					</td>     
+				</tr>
+
+				<tr class="tr_input">  
+					<td>PASSWORD:</td>  
+					<td>
+					    <input type="password" id="password" value="">
+					</td>      
+				</tr>
+			</tbody>
+			</table>  
+		 	<div class="button">
+				<button type="button" id="signup_button" onclick="window.location.href='http://localhost/demo_sign_up 2.html'">Go to Sign up!</button> 
+			</div>
+			<div class="button">  				                      
+				<button type="button" id="login_button">Sign in</button>  	                   
+			</div>
+			<div id="message"></div>
+		</div> 					         						       			           
+	</div>
+	</body>
+</html>
